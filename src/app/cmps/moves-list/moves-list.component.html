@@ -1,0 +1,11 @@
+
+<div class="moves" *ngIf="moves.length">
+    <h2 *ngIf="!contact">Your last 3 moves : </h2>
+    <h2 *ngIf="contact">Your moves : </h2>
+    <div class="move" *ngFor="let move of moves">
+        <h4 *ngIf="!contact"> To :{{ move.to.name }}</h4>
+        <h4>At : {{ move.at | date:'short' }}</h4>
+        <h4> Amout:{{ move.amount }} coins</h4>
+    </div>
+
+</div>

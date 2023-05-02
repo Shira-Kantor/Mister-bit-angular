@@ -1,0 +1,13 @@
+<p>transfer-fund works!</p>
+<form (submit)="onSubmit()">
+    <h2>Transfer Funds</h2>
+    <div>
+to {{contact.name}}
+    </div>
+    <div>
+      <label for="amount-input">Amount:</label>
+      <input type="number" id="amount-input" name="amount" [(ngModel)]="amount" />
+      <span *ngIf="amount > maxCoins">Amount cannot be greater than {{ maxCoins }}.</span>
+    </div>
+    <button type="submit">Transfer</button>
+  </form>

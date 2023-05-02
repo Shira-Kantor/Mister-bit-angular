@@ -1,0 +1,32 @@
+.contact-details {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h3,
+    p {
+        font-weight: bold;
+    }
+
+    .edit {
+        // border: 1px solid blue;
+        box-shadow: 1px 1px 1px 1px sandybrown;
+        border-radius: 6px;
+        width: 65px;
+        height: 30px;
+        text-align: center;
+    }
+
+    img {
+        height: 200px;
+        width: 200px;
+        border-radius: 13px;
+    }
+
+    button {
+        width: 150px;
+        border-radius: 13px;
+        font-weight: bold;
+    }
+}

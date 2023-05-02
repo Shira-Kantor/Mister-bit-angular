@@ -1,0 +1,22 @@
+section {
+    display: flex;
+    flex-direction: row;
+    gap: 50vw;
+
+    .nav {
+        h4:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        font-size: 14px;
+        align-items: center
+    }
+
+    .logo {
+        flex-grow: 1;
+        font-size: 30px;
+    }
+}

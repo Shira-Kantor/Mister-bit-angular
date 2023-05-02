@@ -1,0 +1,33 @@
+.main-app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://cdn.pixabay.com/photo/2018/01/18/07/31/bitcoin-3089728_960_720.jpg');
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+
+    header {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        background-color: #777bc1;
+        color: whitesmoke;
+        margin-bottom: 30px;
+        font-size: 1.2em;
+    }
+
+    main {
+        flex-grow: 1;
+    }
+
+    footer {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        color: whitesmoke;
+        background-color: #c9a062;
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,11 @@
+<section class="login">
+    <form (ngSubmit)="signup($event)">
+      <h1>Please enter your name</h1>
+      <br />
+      <h3>SignUp</h3>
+      <label for="userName"></label>
+      <input [(ngModel)]="userName" (input)="handleChange($event)" name="userName" id="userName" type="text" placeholder="Username" />
+      <button type="submit">SignUp</button>
+    </form>
+  </section>
+  

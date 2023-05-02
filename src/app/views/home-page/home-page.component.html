@@ -1,0 +1,43 @@
+<div>
+  <!-- <app-signup></app-signup> -->
+    <!-- <section class="user">
+      <pre>Hello {{user?.name}}!</pre>
+      <pre>💰 Coins: {{user?.coins}}</pre>
+      <pre>🪙BTC: 0.00054812</pre>
+      <button (click)="onContacts()">Contacts</button>
+      <a href="https://mythrillfiction.com/" target="_blank"></a>
+    </section> -->
+    <div class="slide-container">
+  
+      <div class="wrapper">
+        <div class="clash-card barbarian">
+          <div class="clash-card__image clash-card__image--barbarian">
+            <img src='https://res.cloudinary.com/deayegq6w/image/upload/v1682799001/coins_dmzvzc.png' alt="pig" class="pig" />
+          </div>
+        
+          <div class="clash-card__unit-name">Hello {{user?.name}}!</div>
+          <div class="clash-card__unit-description">
+            <moves-list></moves-list>
+          </div>
+    
+          <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+
+            <div class="one-third">
+              <div class="stat">{{user?.coins}}</div>
+              <div class="stat-value">💰 Coins </div>
+            </div>
+            <div class="one-third">
+              <div class="stat">0.00054812</div>
+              <div class="stat-value">🪙BTC </div>
+            </div>
+    
+            <div class="one-third no-border">
+              <button (click)="onContacts()">Contacts</button>
+            </div>
+
+      </div>
+        </div> <!-- end clash-card barbarian-->
+      </div> <!-- end wrapper -->
+      
+  </div>
+  
