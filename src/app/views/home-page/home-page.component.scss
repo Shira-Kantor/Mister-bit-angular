@@ -204,3 +204,88 @@ button{
     width: 80px;
     box-shadow: 3px 9px 13px 3px #00000045;
 }
+.donate-crypto-box {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 1em;
+	box-sizing: border-box;
+	user-select: none;
+	cursor: text;
+}
+
+.coin {
+	display: inline;
+	position: relative;
+	min-width: 3em;
+	min-height: 3em;
+	animation: spin 3s cubic-bezier(.3,2,.4,.8) infinite both;
+	transform-style: preserve-3d;
+	vertical-align: middle;
+  margin-left: 270px;
+  margin-top: -80px;
+	
+	@keyframes spin {
+		0%, 10% {
+			transform: rotate(-10deg) perspective(400px);
+		}
+		90%, 100% {
+			transform: rotate(-10deg) perspective(400px) rotateY(180deg);
+		}
+	}
+}
+
+.coin-face {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 50%;
+	
+	&:nth-child(1) { transform: translateZ(-.2em) rotateY(-180deg); }
+	&:nth-child(2) { transform: translateZ(-.1em); }
+	&:nth-child(4) { transform: translateZ(.1em); }
+	&:nth-child(5) { transform: translateZ(.2em); }
+	
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+}
+@mixin crypto($color, $max-width) {
+	max-width: $max-width;
+	.coin-face {
+		background: shade($color, 35%);
+		
+		&:nth-child(1),
+		&:nth-child(5) {
+			background: $color;
+		}
+	}
+
+	.coin-address {
+		&:hover, &:focus { border-color: $color; }
+	}
+}
+
+// @include crypto($color, $max-width)
+.btc { @include crypto(#ff9900, 21em); }
+.eth { @include crypto(#6F7CBA, 23em); }
+.ltc { @include crypto(#b5b5b5, 21em); }
+
+// Demo styles
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	font-size: 4vmin;
+}
+
+@for $i from 1 through 3 {
+	.donate-crypto-box:nth-child(#{$i}) .coin {
+		animation-delay: $i*.2s;
+	}	
+}
