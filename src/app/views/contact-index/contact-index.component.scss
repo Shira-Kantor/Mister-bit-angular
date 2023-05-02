@@ -1,0 +1,35 @@
+input {
+
+    text-align: center;
+}
+.list{
+    margin-top: 50px;
+}
+.add {
+    text-align: center;
+}
+
+a.add {
+    display: block;
+}
+
+i {
+    font-weight: bold;
+    width: 2em;
+    height: 2em;
+    color: rgb(239, 229, 229);
+    font-size: 40px;
+    background-color: inherit;
+    border-radius: 100%;
+    -webkit-text-stroke: 1px #0f0e0e;
+    border: 3px solid #e2d6d6;
+    background-color: #777bc1;
+    cursor: pointer;
+    display: block;
+    position:fixed;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

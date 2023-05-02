@@ -17,7 +17,7 @@ body {
   background-size: cover;
   font: 14px/20px "Lato", Arial, sans-serif;
   color: #9E9E9E;
-  margin-top: 30px;
+  margin-top: -30px;
 }
 
 .slide-container {
@@ -27,8 +27,8 @@ body {
 }
 
 .wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  // padding-top: 10px;
+  padding-bottom: 20px;
   
   &:focus {
     outline: 0;
@@ -42,7 +42,7 @@ button{
 
 .clash-card {
   background: white;
-  width: 300px;
+  width: 400px;
   display: inline-block;
   margin: auto;
   border-radius: $border-radius-size + 5;
@@ -54,14 +54,16 @@ button{
 
 .clash-card__image {
   position: relative;
-  height: 230px;
+  height: 200px;
+  width: inherit;
   margin-bottom: 35px;
   border-top-left-radius: $border-radius-size;
   border-top-right-radius: $border-radius-size;
 }
 
 .clash-card__image--barbarian {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
+  // background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
+  background: url('https://cdn.pixabay.com/photo/2017/12/13/16/40/background-3017167__340.jpg');
   
 }
 
@@ -166,7 +168,7 @@ button{
   
   .stat {
     position: relative;
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 10px;
   }
   
@@ -191,7 +193,7 @@ button{
 }
 .pig{
     margin-top: -20px;
-    height: 330px;
+    height: 300px;
     width: 350px;
 }
 button{

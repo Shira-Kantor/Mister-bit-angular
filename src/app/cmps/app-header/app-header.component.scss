@@ -2,7 +2,9 @@ section {
     display: flex;
     flex-direction: row;
     gap: 50vw;
-
+i{
+    color: rgb(255, 153, 0);
+}
     .nav {
         h4:not(:last-child) {
             margin-right: 30px;
